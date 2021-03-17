@@ -6,12 +6,12 @@
 %define		pnam	Extension-REST2
 Summary:	RT::Extension::REST2 - Adds a modern REST API to RT under /REST/2.0/
 Name:		perl-RT-Extension-REST2
-Version:	1.09
+Version:	1.11
 Release:	1
 License:	GPL v2
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RT/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2189381ff50a6aac311ac408fa1b4be7
+# Source0-md5:	a06ea24fcd25e57612b482054d51d977
 URL:		https://metacpan.org/release/RT-Extension-REST2
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -55,3 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/RT/Extension/REST2
 %{perl_vendorlib}/RT/Extension/REST2.pm
 %{_mandir}/man3/RT::Extension::REST2.3*
+%{_mandir}/man3/RT::Extension::REST2::Util.3*
